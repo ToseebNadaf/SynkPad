@@ -5,6 +5,7 @@ import "./globals.css";
 import { Metadata } from "next";
 import { ClerkProvider } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
+import Provider from "./Provider";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -12,8 +13,8 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "LiveDocs",
-  description: "Your go-to collaborative editor",
+  title: "SynkPad",
+  description: "Your collaborative editor",
 };
 
 export default function RootLayout({
@@ -38,7 +39,7 @@ export default function RootLayout({
             fontSans.variable
           )}
         >
-          {children}
+          <Provider>{children}</Provider>
         </body>
       </html>
     </ClerkProvider>
