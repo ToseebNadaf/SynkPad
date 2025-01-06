@@ -40,7 +40,7 @@ const ShareModal = ({
       roomId,
       email,
       userType: userType as UserType,
-      updatedBy: user.info,
+      updatedBy: user.info as User,
     });
 
     setLoading(false);
@@ -104,7 +104,7 @@ const ShareModal = ({
                 creatorId={creatorId}
                 email={collaborator.email}
                 collaborator={collaborator}
-                user={user.info}
+                user={user.info as User}
               />
             ))}
           </ul>
