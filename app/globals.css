@@ -9,7 +9,7 @@
 /* ========================================== TAILWIND STYLES */
 @layer base {
   :root {
-    background: #09111f;
+    background: radial-gradient(125% 125% at 50% 10%, #000 35%, rgb(35, 35, 50) 100%);
     color: #fff;
     margin: 0;
   }
@@ -25,12 +25,12 @@
   }
 
   .custom-scrollbar::-webkit-scrollbar-thumb {
-    background: #2e3d5b;
+    background: #242b38;
     border-radius: 50px;
   }
 
   .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-    background: #7878a3;
+    background: #262631;
   }
 }
 
@@ -43,7 +43,7 @@
   }
 
   .gradient-blue {
-    @apply bg-gradient-to-t from-blue-500 to-blue-400;
+    @apply bg-gradient-to-t from-gray-800 via-indigo-700 to-purple-600;
   }
   .gradient-red {
     @apply bg-gradient-to-t from-red-500 to-red-400;
@@ -74,7 +74,7 @@
   }
 
   .floating-toolbar {
-    @apply flex w-full min-w-max items-center justify-center gap-2 rounded-lg bg-dark-350 p-1.5 shadow-xl;
+    @apply flex w-full min-w-max items-center justify-center gap-2 rounded-lg bg-[rgba(230,241,237,1)] p-1.5 shadow-xl;
   }
 
   .floating-toolbar-btn {
@@ -90,7 +90,7 @@
   }
 
   .header {
-    @apply min-h-[92px] min-w-full flex-nowrap bg-dark-100 flex w-full items-center justify-between gap-2 px-4;
+    @apply min-h-[92px] min-w-full flex-nowrap bg-neutral-950 flex w-full items-center justify-between gap-2 px-4;
   }
 
   .document-list-container {
